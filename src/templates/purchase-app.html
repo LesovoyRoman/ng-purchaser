@@ -34,6 +34,11 @@
                 <td>
                     <input type="checkbox" [(ngModel)]="item.done">
                 </td>
+                <td>
+                    <button class="btn btn-default" (click)="removeItem(item)">
+                        X
+                    </button>
+                </td>
             </tr>
         </tbody>
     </table>

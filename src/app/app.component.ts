@@ -28,5 +28,8 @@ export class AppComponent {
         return Boolean(
             this.items.push(new Item(text, price))
         );
+    };
+    removeItem(item: Item): void {
+        this.items = this.items.filter(_item => _item !== item);
     }
 }
